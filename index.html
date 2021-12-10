@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Udemy Flexbox</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      ul {
+        display: flex;
+        justify-content: flex-end;
+        list-style: none;
+        background-color: goldenrod;
+        flex-wrap: wrap;
+      }
+
+      ul a {
+        text-decoration: none;
+        display: block;
+        padding: 16px;
+        color: #eaeaea;
+        transition: all 0.5s;
+      }
+
+      ul a:hover {
+        background-color: rgb(252, 209, 101);
+      }
+
+      @media all and (max-width: 800px) {
+        ul {
+          justify-content: space-between;
+        }
+      }
+
+      @media all and (max-width: 600px) {
+        ul {
+          flex-direction: column;
+        }
+
+        ul a {
+          text-align: center;
+          padding: 10px;
+          border-top: 1px solid rgba(255, 255, 255, 0.3);
+          border-top: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        ul li:last-child {
+          border: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Portfolio</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </body>
+</html>
